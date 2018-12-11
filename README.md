@@ -1,2 +1,2 @@
 # code-fights
-My solutions to (code-fights)[https://codesignal.com/] problems
+A repository destinated to my solutions to [Code Fights](https://codesignal.com/) problems.
