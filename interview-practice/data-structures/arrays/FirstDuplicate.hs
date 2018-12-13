@@ -1,9 +1,9 @@
 import qualified Data.HashSet                  as HashSet
 
--- | The 'firstDuplicate' function find the first duplicated
+-- | The "firstDuplicate" function find the first duplicated
 -- element with the lowest index in a list.
 -- It is implemented with a call to a tail recursive function that
--- constructs a HashSet containing all the elements of 'xs' until
+-- constructs a HashSet containing all the elements of "xs" until
 -- it finds the first repeated element.
 -- It takes a list of any type and returns a scalar value of
 -- the same type.
