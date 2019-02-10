@@ -14,8 +14,8 @@ def first_not_repeating_character(s) do
 
   graphemes
   |> Enum.drop_while(fn x -> freq[x] > 1 end)
-  |> (fn
-        [] -> "_"
-        [head | _] -> head
-      end).()
+  |> case do
+    [] -> "_"
+    [head | _] -> head
+  end
 end
