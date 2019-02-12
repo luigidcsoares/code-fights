@@ -10,9 +10,10 @@ instance Foldable ListNode where
   foldMap f Nil = mempty
   foldMap f (ListNode x xs) = f x `mappend` foldMap f xs
 
-reversel :: Foldable t => t a -> ListNode a
+reversel :: (Foldable t) => t a -> ListNode a
 reversel = foldl (flip ListNode) Nil
 
+addTwoHugeNumbers :: (Ord a, Num a, Foldable t) => t a -> t a -> ListNode a
 addTwoHugeNumbers a b = go reversedA reversedB 0 Nil
  where
   reversedA = reversel a
